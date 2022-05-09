@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput, } from 'react-native';
+import React, { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, } from 'react-native';
+import CarItem from './components/CarItem';
+
 
 export default function App() {
-  const [outputText, setOutputText] = useState('Open up App.js to start working on your app!');
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{outputText}</Text>
-      <Button style={styles.button} title="Change Text" onPress={() => setOutputText('Text Changed!')} />
-      <TextInput style={styles.textInput}>Enter Your Message</TextInput>
+
+      <CarItem />
+
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -15,24 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  text: {
-    fontWeight: 'bold',
-    color: 'red',
-    paddingBottom: 10,
-  },
-  button: {
-    marginTop: '30%',
-  },
-  textInput: {
-    color: 'orange',
-    justifyContent: "center",
-    borderWidth: 30,
-    height: 20,
-    borderColor: "#FFFFFF",
-    marginTop: 10,
   },
 });
