@@ -3,7 +3,6 @@ import { View, Text, ImageBackground, } from 'react-native';
 import StyledButton from "../StyledButton";
 import styles from './styles';
 
-
 const CarItem = (props) => {
     return (
         <View style={styles.carContainer}>
@@ -15,14 +14,19 @@ const CarItem = (props) => {
 
             <View style={styles.titles} >
                 <Text style={styles.textHeader} >Şahin S</Text>
-                <Text style={styles.text} >15.000'den başlayan fiyatlarla...</Text>
+
+                <View style={styles.text1}>
+                    <Text style={styles.text}>15.000'den başlayan fiyatlarla...</Text>
+                </View>
+
             </View>
+
 
             <StyledButton
                 type="primary"
                 content={"Custom Order"}
                 onPress={() => {
-                    console.warn("To");
+                    console.warn("Custom Order was pressed");
                 }}
             />
 

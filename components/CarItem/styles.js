@@ -7,9 +7,10 @@ const styles = StyleSheet.create({
     },
 
     titles: {
-        marginTop: '30%',
+        marginTop: '140%',
         width: '100%',
         alignItems: 'center',
+        justifyContent: 'center',
     },
 
     textHeader: {
@@ -18,9 +19,23 @@ const styles = StyleSheet.create({
         color: '#14213d',
     },
 
+    text1: {
+        backgroundColor: '#fff',
+        borderRadius: 15,
+        width: '80%',
+        borderStyle: 'solid',
+        color: 'black',
+        borderWidth: 5,
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
     text: {
         fontSize: 20,
-        color: '#b5e48c',
+        color: '#00bbf9',
+        fontWeight: 'bold',
+
     },
 
     image: {
