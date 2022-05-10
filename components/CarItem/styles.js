@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     },
 
     titles: {
-        marginTop: '140%',
+        marginTop: '20%',
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         position: 'absolute',
     },
+    margin: {
+        marginTop: '125%',
+    },
+
 });
 
 
