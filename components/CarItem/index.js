@@ -26,7 +26,7 @@ const CarItem = (props) => {
                     type="primary"
                     content={"Müşteri Velinimet:)"}
                     onPress={() => {
-                        console.warn("Custom Order was pressed");
+                        console.warn("Müşterimiz tuşa bastı");
                     }}
                 />
 
@@ -34,7 +34,7 @@ const CarItem = (props) => {
                     type="secondary"
                     content={"Siz Zaten Müşterimizsiniz:)"}
                     onPress={() => {
-                        console.warn("Existing Inventory was pressed");
+                        console.warn("Sizi de müşterimiz olarak görmek isteriz...");
                     }}
                 />
             </View>
