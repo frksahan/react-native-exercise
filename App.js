@@ -1,21 +1,19 @@
-import React, { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, } from 'react-native';
-import CarItem from './components/CarItem';
+import React from 'expo-status-bar';
+import { StyleSheet, View, } from 'react-native';
+import CarsList from './components/CarItem/CarsList/index';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-
-      <CarItem />
-
-      <StatusBar style="auto" />
+      <CarsList />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
+
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',

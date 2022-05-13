@@ -6,7 +6,7 @@ const StyledButton = (props) => {
 
     //const type = props.type;
     //const content = props.content;
-    //const onPress = props.onPress;
+    //const onPress = props.onPress;  3 satırıı tek satıra da düşürebiliyoruz:)
 
     const { type, content, onPress } = props;
 

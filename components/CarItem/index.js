@@ -5,25 +5,23 @@ import styles from './styles';
 
 const CarItem = (props) => {
 
-    const { name, tagline, image } = props;
+    const { name, tagline, image, taglineCTA } = props.car;
 
     return (
         <View style={styles.carContainer}>
-
             <ImageBackground
                 source={image}
                 style={styles.image}
             />
-
             <View style={styles.titles} >
                 <Text style={styles.textHeader}>{name}</Text>
-
                 <View style={styles.text1}>
                     <Text style={styles.text}>{tagline}</Text>
+                    <Text style={styles.subtitleCTA} >
+                        {taglineCTA}
+                    </Text>
                 </View>
-
             </View>
-
             <View style={styles.buttonsContainer}>
                 <StyledButton
                     type="primary"
@@ -32,7 +30,6 @@ const CarItem = (props) => {
                         console.warn("Müşterimiz tuşa bastı");
                     }}
                 />
-
                 <StyledButton
                     type="secondary"
                     content={"Siz Zaten Müşterimizsiniz:)"}
@@ -41,7 +38,6 @@ const CarItem = (props) => {
                     }}
                 />
             </View>
-
         </View>
     );
 };
