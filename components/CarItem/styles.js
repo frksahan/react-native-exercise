@@ -44,8 +44,10 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         position: 'absolute',
     },
-    margin: {
-        marginTop: '125%',
+    buttonsContainer: {
+        position: 'absolute',
+        bottom: 50,
+        width: '100%',
     },
 
 });

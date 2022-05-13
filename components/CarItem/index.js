@@ -4,24 +4,27 @@ import StyledButton from "../StyledButton";
 import styles from './styles';
 
 const CarItem = (props) => {
+
+    const { name, tagline, image } = props;
+
     return (
         <View style={styles.carContainer}>
 
             <ImageBackground
-                source={require('../../assets/images/tofask.jpg')}
+                source={image}
                 style={styles.image}
             />
 
             <View style={styles.titles} >
-                <Text style={styles.textHeader} >Şahin S</Text>
+                <Text style={styles.textHeader}>{name}</Text>
 
                 <View style={styles.text1}>
-                    <Text style={styles.text}>15.000'den başlayan fiyatlarla...</Text>
+                    <Text style={styles.text}>{tagline}</Text>
                 </View>
 
             </View>
 
-            <View style={styles.margin}>
+            <View style={styles.buttonsContainer}>
                 <StyledButton
                     type="primary"
                     content={"Müşteri Velinimet:)"}
@@ -38,6 +41,7 @@ const CarItem = (props) => {
                     }}
                 />
             </View>
+
         </View>
     );
 };
